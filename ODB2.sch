@@ -20174,9 +20174,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="490.22" y="-83.82" size="1.778" layer="91">Ge the wrong way around</text>
 <text x="271.78" y="129.54" size="1.778" layer="91">normal operation is summing amp...</text>
 <text x="292.1" y="-71.12" size="1.778" layer="91">Original calue was 33n</text>
-<text x="266.7" y="38.1" size="1.778" layer="91">could be 33n or 47n? (33n for less bass clipping)</text>
-<text x="276.86" y="45.72" size="1.778" layer="91">socket the diodes - maybe small signal silicon diodes might be best (needs to be smoother)</text>
-<text x="266.7" y="43.18" size="1.778" layer="91">socket the cap too!</text>
+<text x="271.78" y="38.1" size="1.778" layer="91">could be 33n or 47n? (33n for less bass clipping)</text>
+<text x="271.78" y="43.18" size="1.778" layer="91">SOCKETS THE CAPS
+SOCKET THE DIODES
+
+(perhaps Smaller CAP infront of diodes)
+(Perhaps Shotky Diodes?)</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="-60.96" y="45.72" smashed="yes">
@@ -22315,6 +22318,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
