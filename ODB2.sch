@@ -20241,11 +20241,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-48.26" y="121.92" size="1.778" layer="201">film</text>
 <text x="-2.54" y="104.14" size="1.778" layer="91">could these be 5?</text>
 <text x="-27.94" y="91.44" size="1.778" layer="91">inverting</text>
-<text x="490.22" y="-83.82" size="1.778" layer="91">Ge the wrong way around</text>
-<text x="271.78" y="129.54" size="1.778" layer="91">normal operation is summing amp...</text>
-<text x="292.1" y="-71.12" size="1.778" layer="91">Original calue was 33n</text>
-<text x="266.7" y="38.1" size="1.778" layer="91">could be 33n or 47n? (33n for less bass clipping)</text>
-<text x="276.86" y="53.34" size="1.778" layer="91">may need to increase 47K</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="-60.96" y="45.72" smashed="yes">
