@@ -20239,6 +20239,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="490.22" y="-83.82" size="1.778" layer="91">Ge the wrong way around</text>
 <text x="271.78" y="129.54" size="1.778" layer="91">normal operation is summing amp...</text>
 <text x="292.1" y="-71.12" size="1.778" layer="91">Original calue was 33n</text>
+<<<<<<< HEAD
 <text x="271.78" y="38.1" size="1.778" layer="91">could be 33n or 47n? (33n for less bass clipping)</text>
 <text x="271.78" y="43.18" size="1.778" layer="91">SOCKETS THE CAPS
 SOCKET THE DIODES
@@ -20246,6 +20247,11 @@ SOCKET THE DIODES
 (perhaps Smaller CAP infront of diodes)
 (Perhaps Shotky Diodes?)</text>
 <text x="312.42" y="-86.36" size="1.778" layer="91">only need one!</text>
+=======
+<text x="266.7" y="38.1" size="1.778" layer="91">could be 33n or 47n? (33n for less bass clipping)</text>
+<text x="276.86" y="53.34" size="1.778" layer="91">may need to increase 47K</text>
+<text x="276.86" y="45.72" size="1.778" layer="91">socket the diodes - maybe small signal silicon diodes might be best (needs to be smoother)</text>
+>>>>>>> parent of b6c6442... Update ODB2.sch
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="-60.96" y="45.72" smashed="yes">
@@ -22242,11 +22248,13 @@ SOCKET THE DIODES
 <segment>
 <pinref part="R15" gate="G$1" pin="E"/>
 <pinref part="R23" gate="G$1" pin="E"/>
-<wire x1="147.32" y1="0" x2="124.46" y2="0" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="0" x2="134.62" y2="0" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="0" x2="124.46" y2="0" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="S"/>
 <pinref part="IC2" gate="C" pin="+IN"/>
 <wire x1="111.76" y1="50.8" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="50.8" x2="157.48" y2="0" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="50.8" x2="157.48" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="10.16" x2="157.48" y2="0" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="0" x2="157.48" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="0" x2="157.48" y2="0" width="0.1524" layer="91"/>
 <junction x="147.32" y="0"/>
