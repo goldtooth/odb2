@@ -19968,65 +19968,76 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="1ASWITCHES">
-<description>GOLDDY - Switches.</description>
+<library name="GOLD_transistor-pnp">
+<description>&lt;b&gt;PNP Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SSA22/DPDT">
-<pad name="B1" x="-2.5" y="1.65" drill="0.9"/>
-<pad name="COM1" x="0" y="1.65" drill="0.9"/>
-<pad name="A1" x="2.5" y="1.65" drill="0.9"/>
-<pad name="B2" x="-2.5" y="-1.65" drill="0.9"/>
-<pad name="COM2" x="0" y="-1.65" drill="0.9"/>
-<pad name="A2" x="2.5" y="-1.65" drill="0.9"/>
-<wire x1="-4.5" y1="1.65" x2="4.5" y2="1.65" width="0.127" layer="21"/>
-<wire x1="4.5" y1="1.65" x2="4.5" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="4.5" y1="-1.65" x2="-4.5" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="-1.65" x2="-4.5" y2="1.65" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="1.5" x2="-2.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-1.5" x2="2.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-1.5" x2="2.5" y2="1.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="1.5" x2="-2.5" y2="1.5" width="0.127" layer="51"/>
-<rectangle x1="0" y1="-1.5" x2="2.5" y2="1.5" layer="51"/>
-<text x="0" y="2.5" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<package name="TO92" urn="urn:adsk.eagle:footprint:29172/1" locally_modified="yes">
+<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="22" curve="-111.099"/>
+<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="22" curve="-111.1"/>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="22"/>
+<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-2.254" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="22"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="22" curve="-34.2936"/>
+<pad name="1" x="2.54" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="0" drill="0.8128" shape="octagon"/>
+<pad name="3" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
+<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
+<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="TO92" urn="urn:adsk.eagle:package:29211/2" locally_modified="yes" type="model">
+<description>TO-92</description>
+<packageinstances>
+<packageinstance name="TO92"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="SPDT">
-<circle x="0" y="0" radius="0.762" width="0.254" layer="94"/>
-<circle x="5.08" y="2.54" radius="0.762" width="0.254" layer="94"/>
-<circle x="5.08" y="-2.54" radius="0.762" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="4.572" y2="4.064" width="0.254" layer="94"/>
-<pin name="2" x="-2.54" y="0" visible="off" length="short"/>
-<pin name="1" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
-<pin name="3" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
-<text x="6.604" y="2.794" size="1.016" layer="94" align="bottom-center">A</text>
-<text x="6.604" y="-2.286" size="1.016" layer="94" align="bottom-center">B</text>
-<text x="-2.54" y="5.08" size="1.27" layer="95">&gt;NAME</text>
+<symbol name="PNP" urn="urn:adsk.eagle:symbol:29169/1">
+<wire x1="2.086" y1="1.678" x2="1.578" y2="2.594" width="0.1524" layer="94"/>
+<wire x1="1.578" y1="2.594" x2="0.516" y2="1.478" width="0.1524" layer="94"/>
+<wire x1="0.516" y1="1.478" x2="2.086" y2="1.678" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.808" y2="2.124" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.778" x2="1.524" y2="2.413" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.413" x2="0.762" y2="1.651" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.651" x2="1.778" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="1.778" x2="1.524" y2="2.159" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.159" x2="1.143" y2="1.905" width="0.254" layer="94"/>
+<wire x1="1.143" y1="1.905" x2="1.524" y2="1.905" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SSA22/DPDT" prefix="S">
-<description>SW SLIDE DPDT 2POS SSA SER 30V</description>
+<deviceset name="2N3906" urn="urn:adsk.eagle:component:29288/2" locally_modified="yes" prefix="Q">
+<description>&lt;b&gt;PNP Transistor&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="SPDT" x="0" y="12.7"/>
-<gate name="G$2" symbol="SPDT" x="0" y="-10.16"/>
+<gate name="G$1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SSA22/DPDT">
+<device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="1" pad="A1"/>
-<connect gate="G$1" pin="2" pad="COM1"/>
-<connect gate="G$1" pin="3" pad="B1"/>
-<connect gate="G$2" pin="1" pad="A2"/>
-<connect gate="G$2" pin="2" pad="COM2"/>
-<connect gate="G$2" pin="3" pad="B2"/>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:29211/2"/>
+</package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="450-1604-ND" constant="no"/>
-<attribute name="MOUSER" value="506-SSA22" constant="no"/>
-<attribute name="NEWARK" value="50F5561" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -20093,7 +20104,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C10" library="GT_Capacitor" deviceset="THRU-HOLE-POLARIZED" device="" package3d_urn="urn:adsk.eagle:package:32406/1" value="4.7uf"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1k"/>
 <part name="VR1" library="pot" library_urn="urn:adsk.eagle:library:7633958" deviceset="TRIM_US-" device="3223G" package3d_urn="urn:adsk.eagle:package:7634034/1" value="100k"/>
-<part name="Q3" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" deviceset="2N3906" device="" package3d_urn="urn:adsk.eagle:package:29211/2"/>
+<part name="Q3" library="GOLD_transistor-pnp" deviceset="2N3906" device="" package3d_urn="urn:adsk.eagle:package:29211/2"/>
 <part name="Q4" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="TRANS_NPN" device="-2N3904" package3d_urn="urn:adsk.eagle:package:38450/1" value="200mA/40V"/>
 <part name="C11" library="GT_Capacitor" deviceset="THRU-HOLE-POLARIZED" device="" package3d_urn="urn:adsk.eagle:package:32406/1" value="47uf"/>
 <part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="22k"/>
@@ -20113,7 +20124,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C15" library="GT_Capacitor" deviceset="THRU-HOLE-POLARIZED" device="" package3d_urn="urn:adsk.eagle:package:32406/1" value="1uf"/>
 <part name="R24" library="pot" library_urn="urn:adsk.eagle:library:7633958" deviceset="TRIM_US-" device="3223G" package3d_urn="urn:adsk.eagle:package:7634034/1" value="10k"/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="3.3k"/>
-<part name="C23" library="GT_Capacitor" deviceset="THRU_HOLE_5MM_SPACING" device="" value="200n?"/>
+<part name="C23" library="GT_Capacitor" deviceset="THRU_HOLE_5MM_SPACING" device="" value="220n"/>
 <part name="C18" library="GT_Capacitor" deviceset="THRU_HOLE_5MM_SPACING" device="" value="2.2n"/>
 <part name="R25" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1k"/>
 <part name="R26" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
@@ -20218,14 +20229,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C8" library="GT_Capacitor" deviceset="THRU_HOLE_5MM_SPACING" device="" value="47N"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_D_L" device=""/>
 <part name="F1" library="GOLDTOOTH-Fuses" deviceset="PPTC" device="_THREE-QUARTER-AMP" package3d_urn="urn:adsk.eagle:package:38575/1" value="6V/0.75A"/>
-<part name="U$19" library="diode" deviceset="1N60P" device="VERTICAL" value="1N60PVERTICAL"/>
-<part name="U$20" library="diode" deviceset="1N60P" device="VERTICAL" value="1N60PVERTICAL"/>
-<part name="C28" library="GT_Capacitor" deviceset="THRU_HOLE_5MM_SPACING" device="" value="33n"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="10k"/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="47k"/>
-<part name="S1" library="1ASWITCHES" deviceset="SSA22/DPDT" device=""/>
-<part name="U$21" library="GOLD_SUPPLY" deviceset="VB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20239,22 +20244,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="490.22" y="-83.82" size="1.778" layer="91">Ge the wrong way around</text>
 <text x="271.78" y="129.54" size="1.778" layer="91">normal operation is summing amp...</text>
 <text x="292.1" y="-71.12" size="1.778" layer="91">Original calue was 33n</text>
-<<<<<<< HEAD
-<text x="271.78" y="38.1" size="1.778" layer="91">could be 33n or 47n? (33n for less bass clipping)</text>
-<text x="271.78" y="43.18" size="1.778" layer="91">SOCKETS THE CAPS
-SOCKET THE DIODES
-
-(perhaps Smaller CAP infront of diodes)
-(Perhaps Shotky Diodes?)</text>
-<text x="312.42" y="-86.36" size="1.778" layer="91">only need one!</text>
-=======
 <text x="266.7" y="38.1" size="1.778" layer="91">could be 33n or 47n? (33n for less bass clipping)</text>
 <text x="276.86" y="53.34" size="1.778" layer="91">may need to increase 47K</text>
-<text x="276.86" y="45.72" size="1.778" layer="91">socket the diodes - maybe small signal silicon diodes might be best (needs to be smoother)</text>
-<<<<<<< HEAD
->>>>>>> parent of b6c6442... Update ODB2.sch
-=======
->>>>>>> parent of b6c6442... Update ODB2.sch
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="-60.96" y="45.72" smashed="yes">
@@ -20478,18 +20469,18 @@ SOCKET THE DIODES
 <attribute name="NAME" x="50.8" y="38.1" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="53.34" y="38.1" size="1.778" layer="96" rot="MR270"/>
 </instance>
-<instance part="Q3" gate="G$1" x="104.14" y="25.4" smashed="yes" rot="R180">
-<attribute name="NAME" x="114.3" y="17.78" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="114.3" y="20.32" size="1.778" layer="96" rot="R180"/>
+<instance part="Q3" gate="G$1" x="86.36" y="35.56" smashed="yes">
+<attribute name="NAME" x="76.2" y="43.18" size="1.778" layer="95"/>
+<attribute name="VALUE" x="76.2" y="40.64" size="1.778" layer="96"/>
 </instance>
 <instance part="Q4" gate="G$1" x="86.36" y="48.26" smashed="yes">
 <attribute name="NAME" x="88.9" y="48.26" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="88.9" y="45.974" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C11" gate="G$1" x="99.06" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="95.25" y="36.83" size="1.27" layer="95" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="95.25" y="44.45" size="1.27" layer="96" ratio="10" rot="R90"/>
-<attribute name="PACKAGE" x="96.52" y="40.64" size="0.6096" layer="136" rot="R270"/>
+<instance part="C11" gate="G$1" x="93.98" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="90.17" y="34.29" size="1.27" layer="95" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="90.17" y="41.91" size="1.27" layer="96" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" x="91.44" y="38.1" size="0.6096" layer="136" rot="R270"/>
 </instance>
 <instance part="R16" gate="G$1" x="33.02" y="17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="34.5186" y="21.59" size="1.778" layer="95" rot="R270"/>
@@ -20499,11 +20490,12 @@ SOCKET THE DIODES
 <attribute name="NAME" x="34.5186" y="69.85" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="29.718" y="69.85" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R18" gate="G$1" x="83.82" y="20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="85.3186" y="24.13" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="80.518" y="24.13" size="1.778" layer="96" rot="R270"/>
+<instance part="R18" gate="G$1" x="88.9" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="90.3986" y="21.59" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="85.598" y="21.59" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R19" gate="G$1" x="83.82" y="30.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="85.3186" y="34.29" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="80.518" y="34.29" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R20" gate="G$1" x="83.82" y="53.34" smashed="yes" rot="R270">
@@ -20702,11 +20694,11 @@ SOCKET THE DIODES
 <instance part="SUPPLY19" gate="G$1" x="284.48" y="104.14" smashed="yes" rot="R90">
 <attribute name="VALUE" x="287.655" y="101.981" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="83.82" y="10.16" smashed="yes">
-<attribute name="VALUE" x="81.661" y="6.985" size="1.778" layer="96"/>
+<instance part="SUPPLY9" gate="G$1" x="88.9" y="7.62" smashed="yes">
+<attribute name="VALUE" x="86.741" y="4.445" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY10" gate="G$1" x="101.6" y="38.1" smashed="yes">
-<attribute name="VALUE" x="99.441" y="34.925" size="1.778" layer="96"/>
+<instance part="SUPPLY10" gate="G$1" x="96.52" y="7.62" smashed="yes">
+<attribute name="VALUE" x="94.361" y="4.445" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY11" gate="G$1" x="55.88" y="7.62" smashed="yes">
 <attribute name="VALUE" x="53.721" y="4.445" size="1.778" layer="96"/>
@@ -20951,18 +20943,6 @@ SOCKET THE DIODES
 <attribute name="NAME" x="346.075" y="340.995" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="340.106" y="341.63" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
-<instance part="U$19" gate="G$1" x="261.62" y="40.64" smashed="yes" rot="R270">
-<attribute name="NAME" x="262.1026" y="38.1" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="U$20" gate="G$1" x="259.08" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="258.5974" y="43.18" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="261.3914" y="43.18" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="C28" gate="G$1" x="261.62" y="45.72" smashed="yes" rot="R180">
-<attribute name="NAME" x="260.35" y="41.91" size="1.27" layer="95" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="259.08" y="41.91" size="1.27" layer="96" ratio="10" rot="R90"/>
-<attribute name="PACKAGE" x="263.001421875" y="46.748615625" size="0.6096" layer="129"/>
-</instance>
 <instance part="R14" gate="G$1" x="198.12" y="302.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="196.6214" y="298.45" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="201.422" y="298.45" size="1.778" layer="96" rot="R90"/>
@@ -20970,17 +20950,6 @@ SOCKET THE DIODES
 <instance part="SUPPLY20" gate="+5V" x="198.12" y="309.88" smashed="yes">
 <attribute name="VALUE" x="196.215" y="313.055" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="266.7" y="45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="265.2014" y="41.91" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="270.002" y="41.91" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="S1" gate="G$1" x="99.06" y="30.48" smashed="yes" rot="R180">
-<attribute name="NAME" x="101.6" y="25.4" size="1.27" layer="95" rot="R180"/>
-</instance>
-<instance part="S1" gate="G$2" x="96.52" y="20.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="99.06" y="15.24" size="1.27" layer="95" rot="R180"/>
-</instance>
-<instance part="U$21" gate="VB" x="266.7" y="33.02" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -21162,6 +21131,16 @@ SOCKET THE DIODES
 <junction x="218.44" y="-60.96"/>
 </segment>
 </net>
+<net name="N$62" class="0">
+<segment>
+<pinref part="IC2" gate="D" pin="OUT"/>
+<wire x1="266.7" y1="71.12" x2="266.7" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="+"/>
+<junction x="266.7" y="88.9"/>
+<wire x1="266.7" y1="88.9" x2="271.78" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R36" gate="G$1" pin="A"/>
+</segment>
+</net>
 <net name="CIRCUIT_OUT" class="0">
 <segment>
 <pinref part="VOL" gate="G$1" pin="S"/>
@@ -21324,55 +21303,43 @@ SOCKET THE DIODES
 </net>
 <net name="N$25" class="0">
 <segment>
+<pinref part="Q3" gate="G$1" pin="E"/>
 <pinref part="Q4" gate="G$1" pin="E"/>
-<wire x1="93.98" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="40.64" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="+"/>
-<pinref part="S1" gate="G$2" pin="3"/>
-<wire x1="88.9" y1="22.86" x2="96.52" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="22.86" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="30.48" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="38.1" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="38.1" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
-<junction x="93.98" y="43.18"/>
-<pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="27.94" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
-<junction x="96.52" y="30.48"/>
-<junction x="88.9" y="22.86"/>
-<junction x="91.44" y="27.94"/>
+<junction x="88.9" y="40.64"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
+<pinref part="Q3" gate="G$1" pin="C"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="22.86" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="25.4" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
+<junction x="88.9" y="25.4"/>
 <wire x1="76.2" y1="40.64" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="25.4" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
+<junction x="83.82" y="25.4"/>
 <pinref part="C27" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="25.4" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="27.94" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
 <junction x="78.74" y="25.4"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<pinref part="R18" gate="G$1" pin="1"/>
-<junction x="83.82" y="25.4"/>
 </segment>
 </net>
-<net name="BASE" class="0">
-<segment>
-<pinref part="VR1" gate="G$1" pin="S"/>
-<wire x1="78.74" y1="35.56" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C27" gate="G$1" pin="2"/>
-<label x="83.82" y="35.56" size="1.778" layer="95"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
-<junction x="78.74" y="35.56"/>
-<wire x1="83.82" y1="35.56" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
-<junction x="83.82" y="35.56"/>
-</segment>
+<net name="N$29" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="B"/>
-<wire x1="106.68" y1="25.4" x2="109.22" y2="25.4" width="0.1524" layer="91"/>
-<label x="109.22" y="25.4" size="1.778" layer="95" xref="yes"/>
-<junction x="106.68" y="25.4"/>
+<pinref part="VR1" gate="G$1" pin="S"/>
+<wire x1="83.82" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="35.56" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="35.56" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<junction x="83.82" y="35.56"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<junction x="78.74" y="35.56"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -21850,12 +21817,12 @@ SOCKET THE DIODES
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="SUPPLY9" gate="G$1" pin="GND1"/>
-<wire x1="83.82" y1="12.7" x2="83.82" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="10.16" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="-"/>
 <pinref part="SUPPLY10" gate="G$1" pin="GND1"/>
-<wire x1="101.6" y1="40.64" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="10.16" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="VR1" gate="G$1" pin="E"/>
@@ -22090,11 +22057,6 @@ SOCKET THE DIODES
 <pinref part="IC2" gate="D" pin="+IN"/>
 <junction x="251.46" y="91.44"/>
 </segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="U$21" gate="VB" pin="VB"/>
-<wire x1="266.7" y1="35.56" x2="266.7" y2="40.64" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$22" class="0">
 <segment>
@@ -22308,22 +22270,6 @@ SOCKET THE DIODES
 <pinref part="F1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$57" class="0">
-<segment>
-<pinref part="C28" gate="G$1" pin="1"/>
-<pinref part="U$20" gate="G$1" pin="C"/>
-<pinref part="U$19" gate="G$1" pin="A"/>
-<junction x="261.62" y="43.18"/>
-<wire x1="261.62" y1="43.18" x2="259.08" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<wire x1="261.62" y1="50.8" x2="266.7" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C28" gate="G$1" pin="2"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="N$58" class="0">
 <segment>
 <pinref part="IC2" gate="D" pin="-IN"/>
@@ -22337,11 +22283,6 @@ SOCKET THE DIODES
 <junction x="251.46" y="66.04"/>
 <wire x1="251.46" y1="40.64" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
 <junction x="251.46" y="40.64"/>
-<pinref part="U$20" gate="G$1" pin="A"/>
-<pinref part="U$19" gate="G$1" pin="C"/>
-<wire x1="261.62" y1="38.1" x2="259.08" y2="38.1" width="0.1524" layer="91"/>
-<junction x="259.08" y="38.1"/>
-<wire x1="259.08" y1="38.1" x2="251.46" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="S"/>
 <wire x1="193.04" y1="38.1" x2="251.46" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="38.1" x2="251.46" y2="40.64" width="0.1524" layer="91"/>
@@ -22355,41 +22296,6 @@ SOCKET THE DIODES
 <wire x1="251.46" y1="86.36" x2="241.3" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="86.36" x2="241.3" y2="91.44" width="0.1524" layer="91"/>
 <junction x="241.3" y="91.44"/>
-</segment>
-</net>
-<net name="N$61" class="0">
-<segment>
-<pinref part="Q3" gate="G$1" pin="E"/>
-<wire x1="101.6" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$2" pin="2"/>
-<junction x="99.06" y="20.32"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="Q3" gate="G$1" pin="C"/>
-<pinref part="S1" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$60" class="0">
-<segment>
-<pinref part="S1" gate="G$2" pin="1"/>
-<junction x="88.9" y="17.78"/>
-<pinref part="S1" gate="G$1" pin="3"/>
-<junction x="91.44" y="33.02"/>
-<wire x1="91.44" y1="33.02" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="33.02" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="17.78" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$64" class="0">
-<segment>
-<pinref part="C24" gate="G$1" pin="+"/>
-<pinref part="IC2" gate="D" pin="OUT"/>
-<junction x="266.7" y="88.9"/>
-<wire x1="266.7" y1="88.9" x2="271.78" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="71.12" x2="266.7" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R36" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>
@@ -22414,10 +22320,6 @@ SOCKET THE DIODES
 </schematic>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
