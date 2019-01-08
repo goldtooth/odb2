@@ -20251,6 +20251,9 @@ SOCKET THE DIODES
 <text x="266.7" y="38.1" size="1.778" layer="91">could be 33n or 47n? (33n for less bass clipping)</text>
 <text x="276.86" y="53.34" size="1.778" layer="91">may need to increase 47K</text>
 <text x="276.86" y="45.72" size="1.778" layer="91">socket the diodes - maybe small signal silicon diodes might be best (needs to be smoother)</text>
+<<<<<<< HEAD
+>>>>>>> parent of b6c6442... Update ODB2.sch
+=======
 >>>>>>> parent of b6c6442... Update ODB2.sch
 </plain>
 <instances>
