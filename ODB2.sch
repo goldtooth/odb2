@@ -19937,16 +19937,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="BluePill">
 <packages>
-<package name="PLUGIN_RECIEVE">
-<pad name="OUT" x="21.4892" y="5.097" drill="1.1176" diameter="1.9558" shape="long"/>
-<pad name="NONINV" x="21.4892" y="2.557" drill="1.1176" diameter="1.9558" shape="long"/>
-<pad name="INV" x="21.4892" y="0.017" drill="1.1176" diameter="1.9558" shape="long"/>
-<pad name="GND" x="-27.5108" y="5.097" drill="1.1176" diameter="1.9558" shape="long"/>
-<pad name="VB" x="-27.5108" y="2.557" drill="1.1176" diameter="1.9558" shape="long"/>
-<pad name="18V" x="-27.5108" y="0.017" drill="1.1176" diameter="1.9558" shape="long"/>
-<pad name="MAX" x="-2.5908" y="11.9888" drill="1.1176" diameter="1.9558" shape="long" rot="R90"/>
-<pad name="WIPER" x="-0.0508" y="11.9888" drill="1.1176" diameter="1.9558" shape="long" rot="R90"/>
-<pad name="MIN" x="2.4892" y="11.9888" drill="1.1176" diameter="1.9558" shape="long" rot="R90"/>
+<package name="PLUGIN_RECIEVE_ANOTHER">
+<pad name="OUT" x="21.54" y="0.017" drill="1.1176" diameter="1.9558" shape="long"/>
+<pad name="NONINV" x="21.54" y="-2.523" drill="1.1176" diameter="1.9558" shape="long"/>
+<pad name="INV" x="21.54" y="-5.063" drill="1.1176" diameter="1.9558" shape="long"/>
+<pad name="GND" x="-27.46" y="0.017" drill="1.1176" diameter="1.9558" shape="long"/>
+<pad name="VB" x="-27.46" y="-2.523" drill="1.1176" diameter="1.9558" shape="long"/>
+<pad name="18V" x="-27.46" y="-5.063" drill="1.1176" diameter="1.9558" shape="long"/>
+<pad name="MAX" x="-2.54" y="6.9088" drill="1.1176" diameter="1.9558" shape="square" rot="R90"/>
+<pad name="WIPER" x="0" y="6.9088" drill="1.1176" diameter="1.9558" shape="square" rot="R90"/>
+<pad name="MIN" x="2.54" y="6.9088" drill="1.1176" diameter="1.9558" shape="square" rot="R90"/>
 <circle x="0" y="0" radius="3" width="0.127" layer="216"/>
 <wire x1="-4.93" y1="6.73" x2="4.93" y2="6.73" width="0.2032" layer="22"/>
 <wire x1="0" y1="0" x2="0" y2="6.35" width="0.127" layer="22"/>
@@ -19954,21 +19954,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="5.08" y1="6.35" x2="0" y2="0" width="0.127" layer="22"/>
 <wire x1="0" y1="0" x2="-5.08" y2="6.35" width="0.127" layer="22"/>
 <wire x1="-5.08" y1="6.35" x2="0" y2="6.35" width="0.127" layer="22"/>
-<pad name="POTMIN" x="2.5" y="7" drill="1" diameter="1.8796" shape="square" rot="R90"/>
-<pad name="POTWIPE" x="0" y="7" drill="1" diameter="1.8796" shape="square" rot="R90"/>
-<pad name="POTMAX" x="-2.5" y="7" drill="1" diameter="1.8796" shape="square" rot="R90"/>
 <pad name="P$4" x="4.4" y="0" drill="2" shape="octagon" rot="R90"/>
 <pad name="P$5" x="-4.4" y="0" drill="2" shape="octagon" rot="R90"/>
-<text x="-2.54" y="10.16" size="1.27" layer="22" rot="MR180">&gt;NAME</text>
+<text x="-2.4892" y="5.08" size="1.27" layer="22" rot="MR180">&gt;NAME</text>
 <hole x="0" y="0" drill="1"/>
-<wire x1="-37" y1="15" x2="-37" y2="-6" width="0.254" layer="21"/>
-<wire x1="-37" y1="-6" x2="25" y2="-6" width="0.254" layer="21"/>
-<wire x1="25" y1="-6" x2="25" y2="15" width="0.254" layer="21"/>
-<wire x1="25" y1="15" x2="-37" y2="15" width="0.254" layer="21"/>
+<wire x1="-36.9492" y1="9.92" x2="-36.9492" y2="-11.08" width="0.254" layer="21"/>
+<wire x1="-36.9492" y1="-11.08" x2="25.0508" y2="-11.08" width="0.254" layer="21"/>
+<wire x1="25.0508" y1="-11.08" x2="25.0508" y2="9.92" width="0.254" layer="21"/>
+<wire x1="25.0508" y1="9.92" x2="-36.9492" y2="9.92" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="PLUGIN_RECIEVER">
+<symbol name="2PLUGIN_RECIEVER">
 <pin name="GND" x="-17.78" y="-15.24" length="middle"/>
 <pin name="VB" x="-17.78" y="-17.78" length="middle"/>
 <pin name="18V" x="-17.78" y="-20.32" length="middle"/>
@@ -19983,19 +19980,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-20.32" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
 <text x="-5.08" y="-22.86" size="1.27" layer="97">plugin board</text>
-<pin name="POTMOX" x="-2.54" y="-5.08" length="middle" rot="R90"/>
-<pin name="POTWOPE" x="0" y="-5.08" length="middle" rot="R90"/>
-<pin name="POTMON" x="2.54" y="-5.08" length="middle" rot="R90"/>
-<circle x="0" y="2.54" radius="3.5921" width="0.254" layer="94"/>
+<circle x="0" y="-10.16" radius="3.5921" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GT_PLUGIN">
+<deviceset name="GT_PLUGIN_ODB">
 <gates>
-<gate name="G$1" symbol="PLUGIN_RECIEVER" x="0" y="5.08"/>
+<gate name="G$1" symbol="2PLUGIN_RECIEVER" x="0" y="10.16"/>
 </gates>
 <devices>
-<device name="" package="PLUGIN_RECIEVE">
+<device name="" package="PLUGIN_RECIEVE_ANOTHER">
 <connects>
 <connect gate="G$1" pin="18V" pad="18V"/>
 <connect gate="G$1" pin="CONNECT" pad="MAX"/>
@@ -20005,9 +19999,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="INV" pad="INV"/>
 <connect gate="G$1" pin="NON_INV" pad="NONINV"/>
 <connect gate="G$1" pin="OUT" pad="OUT"/>
-<connect gate="G$1" pin="POTMON" pad="POTMIN"/>
-<connect gate="G$1" pin="POTMOX" pad="POTMAX"/>
-<connect gate="G$1" pin="POTWOPE" pad="POTWIPE"/>
 <connect gate="G$1" pin="VB" pad="VB"/>
 </connects>
 <technologies>
@@ -20226,7 +20217,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R35" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="100k"/>
 <part name="SUPPLY27" library="GOLD_SUPPLY" deviceset="GND1" device=""/>
 <part name="C25" library="GT_Capacitor" deviceset="THRU-HOLE-POLARIZED" device="" package3d_urn="urn:adsk.eagle:package:32406/1" value="1uf"/>
-<part name="GAIN" library="pot" library_urn="urn:adsk.eagle:library:7633958" deviceset="TRIM_US-" device="3223G" package3d_urn="urn:adsk.eagle:package:7634034/1" value="47k"/>
+<part name="GAIN" library="pot" library_urn="urn:adsk.eagle:library:7633958" deviceset="TRIM_US-" device="3223G" package3d_urn="urn:adsk.eagle:package:7634034/1" value="20k"/>
 <part name="++" library="solpad" library_urn="urn:adsk.eagle:library:364" deviceset="LSP10" device="" package3d_urn="urn:adsk.eagle:package:26501/1"/>
 <part name="--" library="solpad" library_urn="urn:adsk.eagle:library:364" deviceset="LSP10" device="" package3d_urn="urn:adsk.eagle:package:26501/1"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="SCHOTTKY-DIODE" device="SMD" package3d_urn="urn:adsk.eagle:package:43404/2" value="1n5817"/>
@@ -20270,12 +20261,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="--1" library="solpad" library_urn="urn:adsk.eagle:library:364" deviceset="LSP10" device="" package3d_urn="urn:adsk.eagle:package:26501/1"/>
 <part name="--2" library="solpad" library_urn="urn:adsk.eagle:library:364" deviceset="LSP10" device="" package3d_urn="urn:adsk.eagle:package:26501/1"/>
 <part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="vr / 5 ish (5k-10k)"/>
-<part name="U$3" library="BluePill" deviceset="GT_PLUGIN" device="" value="GT_PLUGIN"/>
 <part name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2W" device="" package3d_urn="urn:adsk.eagle:package:15456/1"/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="0204/7" value="47r"/>
 <part name="U$4" library="GOLD_SUPPLY" deviceset="VB" device=""/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="100k"/>
 <part name="SUPPLY8" library="GOLD_SUPPLY" deviceset="GND1" device=""/>
+<part name="U$5" library="BluePill" deviceset="GT_PLUGIN_ODB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20828,7 +20819,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="21.8186" y="138.43" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="17.018" y="138.43" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$3" gate="G$1" x="17.78" y="60.96" smashed="yes"/>
 <instance part="JP1" gate="1" x="45.72" y="38.1" smashed="yes">
 <attribute name="NAME" x="41.91" y="38.1" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="51.435" y="38.1" size="1.778" layer="96" rot="R90"/>
@@ -20845,6 +20835,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY8" gate="G$1" x="297.18" y="83.82" smashed="yes">
 <attribute name="VALUE" x="295.021" y="80.645" size="1.778" layer="96"/>
 </instance>
+<instance part="U$5" gate="G$1" x="17.78" y="60.96" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -21404,9 +21395,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="P+7" gate="1" pin="+18V"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="18V"/>
 <pinref part="P+5" gate="1" pin="+18V"/>
 <wire x1="-7.62" y1="40.64" x2="0" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="18V"/>
 </segment>
 </net>
 <net name="GND1" class="0">
@@ -21531,8 +21522,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="SUPPLY29" gate="G$1" pin="GND1"/>
-<pinref part="U$3" gate="G$1" pin="GND"/>
 <wire x1="-7.62" y1="45.72" x2="0" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -21659,8 +21650,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$32" gate="VB" pin="VB"/>
-<pinref part="U$3" gate="G$1" pin="VB"/>
 <wire x1="-12.7" y1="43.18" x2="0" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="VB"/>
 </segment>
 <segment>
 <pinref part="VOL" gate="G$1" pin="E"/>
@@ -21835,7 +21826,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="157.48" y1="45.72" x2="157.48" y2="0" width="0.1524" layer="91"/>
 <junction x="157.48" y="0"/>
 <wire x1="35.56" y1="45.72" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="OUT"/>
+<pinref part="U$5" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$82" class="0">
@@ -21905,37 +21896,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="236.22" y1="20.32" x2="241.3" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="CONNECT_MIN"/>
-<pinref part="U$3" gate="G$1" pin="POTMON"/>
-<wire x1="20.32" y1="50.8" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="POTWOPE"/>
-<pinref part="U$3" gate="G$1" pin="CONNECT_WIPER"/>
-<wire x1="17.78" y1="55.88" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="POTMOX"/>
-<pinref part="U$3" gate="G$1" pin="CONNECT"/>
-<wire x1="15.24" y1="55.88" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="NON_INV"/>
 <pinref part="JP1" gate="1" pin="2"/>
 <wire x1="35.56" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="43.18" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="INV"/>
-<wire x1="35.56" y1="43.18" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
-<junction x="35.56" y="43.18"/>
 <junction x="45.72" y="35.56"/>
+<pinref part="U$5" gate="G$1" pin="INV"/>
+<pinref part="U$5" gate="G$1" pin="NON_INV"/>
+<wire x1="35.56" y1="40.64" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
+<junction x="35.56" y="43.18"/>
 </segment>
 </net>
 <net name="N$15" class="0">
